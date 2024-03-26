@@ -1,0 +1,524 @@
+.od4fw004Icon {
+    position: absolute;
+    top: -5px;
+    left: -27px;
+    border-radius: 0 0 23px 23px;
+    width: 1161.4px;
+    height: 754.3px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+  .logoBlack11 {
+    position: absolute;
+    top: 42px;
+    left: 80px;
+    width: 125px;
+    height: 19px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .frameChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 21px;
+    background-color: #e7e7e7;
+    box-shadow: 0 3px 17.1px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .od4fw002Icon,
+  .wrapperVector2Child {
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+  }
+  .od4fw002Icon {
+    top: 0;
+    border-radius: 0 0 23px 23px;
+    width: 249px;
+    height: 251px;
+    mix-blend-mode: color-burn;
+  }
+  .wrapperVector2Child {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    top: 4px;
+    transform: scale(2.3);
+  }
+  .frameItem,
+  .wrapperVector2 {
+    position: absolute;
+    top: 102.9px;
+    width: 8px;
+    height: 16px;
+    z-index: 4;
+  }
+  .wrapperVector2 {
+    left: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .frameItem {
+    left: 240px;
+    object-fit: contain;
+  }
+  .od4fw002Parent {
+    position: absolute;
+    width: calc(100% - 22px);
+    top: 9.1px;
+    right: 10px;
+    left: 12px;
+    height: 251px;
+  }
+  .frameInner,
+  .rectangleDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .frameInner {
+    border-radius: 0 0 21px 21px;
+    background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
+    display: none;
+  }
+  .rectangleDiv {
+    border-radius: 10px;
+    background-color: #000;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .orderNow {
+    position: absolute;
+    top: 14px;
+    left: 54px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    min-width: 83px;
+    z-index: 6;
+  }
+  .rectangleContainer {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 227px;
+    left: 39px;
+    width: 194px;
+    height: 46px;
+    white-space: nowrap;
+  }
+  .latte,
+  .ourLatteIs {
+    position: absolute;
+    display: inline-block;
+    z-index: 5;
+  }
+  .latte {
+    margin: 0;
+    top: 109px;
+    left: 38px;
+    font-size: inherit;
+    font-weight: 500;
+    font-family: inherit;
+    min-width: 50px;
+  }
+  .ourLatteIs {
+    top: 143px;
+    left: 39px;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: Poppins;
+    color: #000;
+    width: 194px;
+    height: 61px;
+  }
+  .rectangleGroup {
+    position: absolute;
+    top: 138px;
+    left: 0;
+    border-radius: 0 0 21px 21px;
+    background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
+    width: 100%;
+    height: 290px;
+    z-index: 4;
+  }
+  .whatIsALatte17083104771Icon {
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    border-radius: 21px;
+    width: 212px;
+    height: 229px;
+    object-fit: cover;
+    z-index: 5;
+  }
+  .frameChild1,
+  .rectangleParent {
+    position: absolute;
+    border-radius: 21px;
+    box-shadow: 0 3px 17.1px rgba(0, 0, 0, 0.25);
+  }
+  .rectangleParent {
+    top: 158px;
+    left: 80px;
+    background-color: #e7e7e7;
+    width: 271px;
+    height: 428px;
+    z-index: 2;
+  }
+  .frameChild1 {
+    top: 0;
+    left: 0;
+    background-color: #eaeaea;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .od4fw005Icon,
+  .wrapperVector4Child {
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+  }
+  .od4fw005Icon {
+    top: 0;
+    border-radius: 0 0 23px 23px;
+    width: 249px;
+    height: 251px;
+    mix-blend-mode: color-burn;
+  }
+  .wrapperVector4Child {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    top: 4px;
+    transform: scale(2.3);
+  }
+  .vectorIcon,
+  .wrapperVector4 {
+    position: absolute;
+    top: 102.9px;
+    width: 8px;
+    height: 16px;
+    z-index: 4;
+  }
+  .wrapperVector4 {
+    left: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vectorIcon {
+    left: 240px;
+    object-fit: contain;
+  }
+  .od4fw005Parent {
+    position: absolute;
+    width: calc(100% - 22px);
+    top: 9.1px;
+    right: 10px;
+    left: 12px;
+    height: 251px;
+  }
+  .frameChild2,
+  .frameChild3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .frameChild2 {
+    border-radius: 0 0 21px 21px;
+    background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
+  }
+  .frameChild3 {
+    border-radius: 10px;
+    background-color: #000;
+  }
+  .orderNow1 {
+    position: absolute;
+    top: 14px;
+    left: 54px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    min-width: 83px;
+    z-index: 6;
+  }
+  .frameButton {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: #000;
+    position: absolute;
+    top: 230px;
+    left: 38px;
+    border-radius: 10px;
+    width: 194px;
+    height: 46px;
+    white-space: nowrap;
+    z-index: 5;
+  }
+  .frameButton:hover,
+  .rectangleParent4:hover {
+    background-color: #333;
+  }
+  .americano,
+  .ourLatteIs1 {
+    position: absolute;
+    left: 38px;
+    display: inline-block;
+    z-index: 5;
+  }
+  .americano {
+    margin: 0;
+    top: 112px;
+    font-size: inherit;
+    font-weight: 500;
+    font-family: inherit;
+    min-width: 103px;
+  }
+  .ourLatteIs1 {
+    top: 142px;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: Poppins;
+    color: #000;
+    width: 194px;
+    height: 61px;
+  }
+  .rectangleParent1 {
+    position: absolute;
+    top: 135px;
+    left: 0;
+    border-radius: 0 0 21px 21px;
+    background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
+    width: 100%;
+    height: 293px;
+    z-index: 4;
+  }
+  .frameChild4,
+  .frameDiv {
+    position: absolute;
+    border-radius: 21px;
+    background-color: #eaeaea;
+    box-shadow: 0 3px 17.1px rgba(0, 0, 0, 0.25);
+  }
+  .frameDiv {
+    top: 158px;
+    left: 431px;
+    width: 271px;
+    height: 428px;
+    z-index: 2;
+  }
+  .frameChild4 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .od4fw006Icon,
+  .wrapperVector6Child {
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+  }
+  .od4fw006Icon {
+    top: 0;
+    border-radius: 0 0 23px 23px;
+    width: 249px;
+    height: 251px;
+    mix-blend-mode: color-burn;
+  }
+  .wrapperVector6Child {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    top: 4px;
+    transform: scale(2.3);
+  }
+  .frameChild5,
+  .wrapperVector6 {
+    position: absolute;
+    top: 102.9px;
+    width: 8px;
+    height: 16px;
+    z-index: 4;
+  }
+  .wrapperVector6 {
+    left: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .frameChild5 {
+    left: 240px;
+    object-fit: contain;
+  }
+  .od4fw006Parent {
+    position: absolute;
+    width: calc(100% - 22px);
+    top: 9.1px;
+    right: 10px;
+    left: 12px;
+    height: 251px;
+  }
+  .frameChild6,
+  .frameChild7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .frameChild6 {
+    border-radius: 0 0 21px 21px;
+    background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
+  }
+  .frameChild7 {
+    border-radius: 10px;
+    background-color: #000;
+  }
+  .orderNow2 {
+    position: absolute;
+    top: 14px;
+    left: 54px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    min-width: 83px;
+    z-index: 6;
+  }
+  .rectangleParent4 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: #000;
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    border-radius: 10px;
+    width: 194px;
+    height: 46px;
+    white-space: nowrap;
+    z-index: 5;
+  }
+  .cappuccino,
+  .ourLatteIs2 {
+    position: absolute;
+    display: inline-block;
+    z-index: 5;
+  }
+  .cappuccino {
+    margin: 0;
+    top: 112px;
+    left: 38px;
+    font-size: inherit;
+    font-weight: 500;
+    font-family: inherit;
+    min-width: 115px;
+  }
+  .ourLatteIs2 {
+    top: 146px;
+    left: 39px;
+    font-size: 10px;
+    font-weight: 300;
+    color: #000;
+    width: 194px;
+    height: 61px;
+  }
+  .rectangleParent3 {
+    position: absolute;
+    top: 135px;
+    left: 0;
+    border-radius: 0 0 21px 21px;
+    background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
+    width: 100%;
+    height: 293px;
+    z-index: 4;
+  }
+  .unnamed11 {
+    position: absolute;
+    top: 2.2px;
+    left: 32px;
+    width: 216.2px;
+    height: 211px;
+    object-fit: contain;
+    z-index: 5;
+  }
+  .rectangleParent2 {
+    position: absolute;
+    top: 158px;
+    left: 782px;
+    border-radius: 21px;
+    background-color: #eaeaea;
+    box-shadow: 0 3px 17.1px rgba(0, 0, 0, 0.25);
+    width: 271px;
+    height: 428px;
+    z-index: 2;
+  }
+  .howToDrinkCafeAmericano17Icon {
+    position: absolute;
+    top: 162px;
+    left: 391px;
+    width: 327px;
+    height: 216px;
+    object-fit: cover;
+    z-index: 5;
+  }
+  .oDFW {
+    height: 744px;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+  }
+  .frameParent,
+  .oDFWWrapper {
+    background-color: #fff;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .oDFWWrapper {
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+    color: #3f3f3f;
+    font-family: Inter;
+  }
+  .frameParent {
+    width: 1132px;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 450px) {
+    .americano,
+    .cappuccino,
+    .latte {
+      font-size: 16px;
+    }
+  }
+  

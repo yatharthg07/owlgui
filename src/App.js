@@ -27,15 +27,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/about":
-        title = "About Us";
-        metaDescription = "Learn more about our company.";
-        break;
-      // Add more cases as needed...
-      default:
-        // Handle default case when the pathname does not match any of the defined cases
-        title = "Page Not Found";
-        metaDescription = "The requested page was not found.";
+        default:
+    // Handle default case when the pathname does not match any of the defined cases
+    title = "Page Not Found";
+    metaDescription = "The requested page was not found.";
     }
 
     if (title) {
