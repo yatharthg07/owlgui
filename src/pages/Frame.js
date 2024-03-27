@@ -122,7 +122,7 @@ const Frame = () => {
                 className={styles.frameChild5}
                 loading="lazy"
                 alt=""
-                src="/vector-5.svg"
+                src="/vector-3.svg"
               />
             </div>
             <div className={styles.rectangleParent3}>

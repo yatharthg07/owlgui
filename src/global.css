@@ -1,6 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 body {
   margin: 0;
   line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --font-size-3xs: 10px;
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-whitesmoke: #eaeaea;
+  --color-black: #000;
+  --color-darkslategray-100: #3f3f3f;
+  --color-darkslategray-200: #333;
+  --color-gainsboro: #e7e7e7;
+
+  /* Border radiuses */
+  --br-2xl: 21px;
+  --br-3xs: 10px;
+  --br-4xl: 23px;
 }

@@ -2,7 +2,7 @@
     position: absolute;
     top: -5px;
     left: -27px;
-    border-radius: 0 0 23px 23px;
+    border-radius: 0 0 var(--br-4xl) var(--br-4xl);
     width: 1161.4px;
     height: 754.3px;
     object-fit: contain;
@@ -21,8 +21,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 21px;
-    background-color: #e7e7e7;
+    border-radius: var(--br-2xl);
+    background-color: var(--color-gainsboro);
     box-shadow: 0 3px 17.1px rgba(0, 0, 0, 0.25);
     width: 100%;
     height: 100%;
@@ -36,7 +36,7 @@
   }
   .od4fw002Icon {
     top: 0;
-    border-radius: 0 0 23px 23px;
+    border-radius: 0 0 var(--br-4xl) var(--br-4xl);
     width: 249px;
     height: 251px;
     mix-blend-mode: color-burn;
@@ -83,13 +83,13 @@
     height: 100%;
   }
   .frameInner {
-    border-radius: 0 0 21px 21px;
+    border-radius: 0 0 var(--br-2xl) var(--br-2xl);
     background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
     display: none;
   }
   .rectangleDiv {
-    border-radius: 10px;
-    background-color: #000;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-black);
     cursor: pointer;
     z-index: 5;
   }
@@ -97,10 +97,10 @@
     position: absolute;
     top: 14px;
     left: 54px;
-    font-size: 16px;
+    font-size: var(--font-size-base);
     font-weight: 500;
-    font-family: Inter;
-    color: #fff;
+    font-family: var(--font-inter);
+    color: var(--color-white);
     text-align: center;
     display: inline-block;
     min-width: 83px;
@@ -136,10 +136,10 @@
   .ourLatteIs {
     top: 143px;
     left: 39px;
-    font-size: 10px;
+    font-size: var(--font-size-3xs);
     font-weight: 300;
-    font-family: Poppins;
-    color: #000;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
     width: 194px;
     height: 61px;
   }
@@ -147,7 +147,7 @@
     position: absolute;
     top: 138px;
     left: 0;
-    border-radius: 0 0 21px 21px;
+    border-radius: 0 0 var(--br-2xl) var(--br-2xl);
     background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
     width: 100%;
     height: 290px;
@@ -157,7 +157,7 @@
     position: absolute;
     top: 8px;
     left: 30px;
-    border-radius: 21px;
+    border-radius: var(--br-2xl);
     width: 212px;
     height: 229px;
     object-fit: cover;
@@ -166,13 +166,13 @@
   .frameChild1,
   .rectangleParent {
     position: absolute;
-    border-radius: 21px;
+    border-radius: var(--br-2xl);
     box-shadow: 0 3px 17.1px rgba(0, 0, 0, 0.25);
   }
   .rectangleParent {
     top: 158px;
     left: 80px;
-    background-color: #e7e7e7;
+    background-color: var(--color-gainsboro);
     width: 271px;
     height: 428px;
     z-index: 2;
@@ -180,7 +180,7 @@
   .frameChild1 {
     top: 0;
     left: 0;
-    background-color: #eaeaea;
+    background-color: var(--color-whitesmoke);
     width: 100%;
     height: 100%;
     display: none;
@@ -193,7 +193,7 @@
   }
   .od4fw005Icon {
     top: 0;
-    border-radius: 0 0 23px 23px;
+    border-radius: 0 0 var(--br-4xl) var(--br-4xl);
     width: 249px;
     height: 251px;
     mix-blend-mode: color-burn;
@@ -241,21 +241,21 @@
     display: none;
   }
   .frameChild2 {
-    border-radius: 0 0 21px 21px;
+    border-radius: 0 0 var(--br-2xl) var(--br-2xl);
     background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
   }
   .frameChild3 {
-    border-radius: 10px;
-    background-color: #000;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-black);
   }
   .orderNow1 {
     position: absolute;
     top: 14px;
     left: 54px;
-    font-size: 16px;
+    font-size: var(--font-size-base);
     font-weight: 500;
-    font-family: Inter;
-    color: #fff;
+    font-family: var(--font-inter);
+    color: var(--color-white);
     text-align: center;
     display: inline-block;
     min-width: 83px;
@@ -265,11 +265,11 @@
     cursor: pointer;
     border: 0;
     padding: 0;
-    background-color: #000;
+    background-color: var(--color-black);
     position: absolute;
     top: 230px;
     left: 38px;
-    border-radius: 10px;
+    border-radius: var(--br-3xs);
     width: 194px;
     height: 46px;
     white-space: nowrap;
@@ -277,7 +277,7 @@
   }
   .frameButton:hover,
   .rectangleParent4:hover {
-    background-color: #333;
+    background-color: var(--color-darkslategray-200);
   }
   .americano,
   .ourLatteIs1 {
@@ -296,10 +296,10 @@
   }
   .ourLatteIs1 {
     top: 142px;
-    font-size: 10px;
+    font-size: var(--font-size-3xs);
     font-weight: 300;
-    font-family: Poppins;
-    color: #000;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
     width: 194px;
     height: 61px;
   }
@@ -307,7 +307,7 @@
     position: absolute;
     top: 135px;
     left: 0;
-    border-radius: 0 0 21px 21px;
+    border-radius: 0 0 var(--br-2xl) var(--br-2xl);
     background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
     width: 100%;
     height: 293px;
@@ -316,8 +316,8 @@
   .frameChild4,
   .frameDiv {
     position: absolute;
-    border-radius: 21px;
-    background-color: #eaeaea;
+    border-radius: var(--br-2xl);
+    background-color: var(--color-whitesmoke);
     box-shadow: 0 3px 17.1px rgba(0, 0, 0, 0.25);
   }
   .frameDiv {
@@ -342,7 +342,7 @@
   }
   .od4fw006Icon {
     top: 0;
-    border-radius: 0 0 23px 23px;
+    border-radius: 0 0 var(--br-4xl) var(--br-4xl);
     width: 249px;
     height: 251px;
     mix-blend-mode: color-burn;
@@ -390,21 +390,21 @@
     display: none;
   }
   .frameChild6 {
-    border-radius: 0 0 21px 21px;
+    border-radius: 0 0 var(--br-2xl) var(--br-2xl);
     background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
   }
   .frameChild7 {
-    border-radius: 10px;
-    background-color: #000;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-black);
   }
   .orderNow2 {
     position: absolute;
     top: 14px;
     left: 54px;
-    font-size: 16px;
+    font-size: var(--font-size-base);
     font-weight: 500;
-    font-family: Inter;
-    color: #fff;
+    font-family: var(--font-inter);
+    color: var(--color-white);
     text-align: center;
     display: inline-block;
     min-width: 83px;
@@ -414,11 +414,11 @@
     cursor: pointer;
     border: 0;
     padding: 0;
-    background-color: #000;
+    background-color: var(--color-black);
     position: absolute;
     top: 230px;
     left: 40px;
-    border-radius: 10px;
+    border-radius: var(--br-3xs);
     width: 194px;
     height: 46px;
     white-space: nowrap;
@@ -442,9 +442,9 @@
   .ourLatteIs2 {
     top: 146px;
     left: 39px;
-    font-size: 10px;
+    font-size: var(--font-size-3xs);
     font-weight: 300;
-    color: #000;
+    color: var(--color-black);
     width: 194px;
     height: 61px;
   }
@@ -452,7 +452,7 @@
     position: absolute;
     top: 135px;
     left: 0;
-    border-radius: 0 0 21px 21px;
+    border-radius: 0 0 var(--br-2xl) var(--br-2xl);
     background: linear-gradient(180deg, #e6e6e6, #ffcc91 50%, #fffac9);
     width: 100%;
     height: 293px;
@@ -471,8 +471,8 @@
     position: absolute;
     top: 158px;
     left: 782px;
-    border-radius: 21px;
-    background-color: #eaeaea;
+    border-radius: var(--br-2xl);
+    background-color: var(--color-whitesmoke);
     box-shadow: 0 3px 17.1px rgba(0, 0, 0, 0.25);
     width: 271px;
     height: 428px;
@@ -495,8 +495,7 @@
   }
   .frameParent,
   .oDFWWrapper {
-    background-color: #fff;
-    max-width: 100%;
+    background-color: var(--color-white);
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -505,20 +504,22 @@
   }
   .oDFWWrapper {
     flex: 1;
+    max-width: 100%;
     text-align: left;
-    font-size: 20px;
-    color: #3f3f3f;
-    font-family: Inter;
+    font-size: var(--font-size-xl);
+    color: var(--color-darkslategray-100);
+    font-family: var(--font-inter);
   }
   .frameParent {
-    width: 1132px;
+    width: 100%;
+    position: relative;
     letter-spacing: normal;
   }
   @media screen and (max-width: 450px) {
     .americano,
     .cappuccino,
     .latte {
-      font-size: 16px;
+      font-size: var(--font-size-base);
     }
   }
   

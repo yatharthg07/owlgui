@@ -5,7 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
+import Frame from "./pages/Frame";
 
 function App() {
   const action = useNavigationType();
@@ -27,10 +27,6 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-        default:
-    // Handle default case when the pathname does not match any of the defined cases
-    title = "Page Not Found";
-    metaDescription = "The requested page was not found.";
     }
 
     if (title) {
@@ -49,7 +45,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />} />
+      <Route path="/" element={<Frame />} />
     </Routes>
   );
 }
