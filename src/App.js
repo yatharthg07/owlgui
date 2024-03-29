@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Frame from "./pages/Frame";
+import Frame1 from "./pages/Frame1";
 
 function App() {
   const action = useNavigationType();
@@ -27,7 +28,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-
+      case "/frame-5":
+        title = "";
+        metaDescription = "";
+        break;
         default:
     // Handle default case when the pathname does not match any of the defined cases
     title = "Page Not Found";
@@ -51,6 +55,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Frame />} />
+      <Route path="/Preparing" element={<Frame1 />} />
     </Routes>
   );
 }

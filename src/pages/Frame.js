@@ -1,11 +1,15 @@
 import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Frame.module.css";
 
 const Frame = () => {
-  const onRectangleClick = useCallback(() => {
-    // Please sync "Frame 5" to the project
-  }, []);
+  const navigate = useNavigate();
 
+  const onRectangleClick = useCallback(() => {
+    navigate("/Preparing");
+  }, [navigate]);
+
+ 
   return (
     <div className={styles.frameParent}>
       <section className={styles.oDFWWrapper}>
