@@ -10,16 +10,16 @@ const Frame1 = () => {
     <div className={styles.frameParent}>
       <section className={styles.od4fw004Parent}>
         <img
-          className={styles.od4fw004Icon}
+          className={styles.backgroundImage}
           alt=""
-          src="/933587-od4fw00-4@2x.png"
+          src="/backgrounImage_2.png"
           onClick={onOD4FW004ImageClick}
         />
         <img
-          className={styles.logoBlack11}
+          className={styles.orangewoodLogo}
           loading="lazy"
           alt=""
-          src="/logo-black-1-1@2x.png"
+          src="/orangewoodLogo.png"
         />
       </section>
       <section className={styles.rectangleParent}>

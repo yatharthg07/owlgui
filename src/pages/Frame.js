@@ -1,29 +1,42 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Frame.module.css";
+import axios from "axios";
+
 
 const Frame = () => {
   const navigate = useNavigate();
 
   const onRectangleClick = useCallback(() => {
+    // First, navigate to "/Preparing"
     navigate("/Preparing");
+  
+    // Then, make a request to run the Python server
+    axios.get('http://localhost:8000/run-server') // Adjust URL as needed
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error('Error running server:', error);
+      });
   }, [navigate]);
-
+  
  
   return (
     <div className={styles.frameParent}>
       <section className={styles.oDFWWrapper}>
         <div className={styles.oDFW}>
           <img
-            className={styles.od4fw004Icon}
+            className={styles.backgroundImage
+            }
             alt=""
-            src="/933587-od4fw00-4@2x.png"
+            src="/backgroundImage_2.png"
           />
           <img
-            className={styles.logoBlack11}
+            className={styles.orangewoodLogo}
             loading="lazy"
             alt=""
-            src="/logo-black-1-1@2x.png"
+            src="/orangewoodLogo.png"
           />
           <div className={styles.rectangleParent}>
             <div className={styles.frameChild} />
@@ -31,7 +44,7 @@ const Frame = () => {
               <img
                 className={styles.od4fw002Icon}
                 alt=""
-                src="/933587-od4fw00-2@2x.png"
+                src="/backgroundImage_1.png"
               />
               <div className={styles.wrapperVector2}>
                 <img
@@ -95,9 +108,12 @@ const Frame = () => {
             </div>
             <div className={styles.rectangleParent1}>
               <div className={styles.frameChild2} />
-              <button className={styles.frameButton}>
-                <div className={styles.frameChild3} />
-                <div className={styles.orderNow1}>Order Now</div>
+              <button className={styles.rectangleContainer}>
+                <div
+                  className={styles.rectangleDiv}
+                  onClick={onRectangleClick}
+                />
+                <div className={styles.orderNow}>Order Now</div>
               </button>
               <h1 className={styles.americano}>{`Americano `}</h1>
               <div className={styles.ourLatteIs1}>
@@ -131,9 +147,12 @@ const Frame = () => {
             </div>
             <div className={styles.rectangleParent3}>
               <div className={styles.frameChild6} />
-              <button className={styles.rectangleParent4}>
-                <div className={styles.frameChild7} />
-                <div className={styles.orderNow2}>Order Now</div>
+              <button className={styles.rectangleContainer}>
+                <div
+                  className={styles.rectangleDiv}
+                  onClick={onRectangleClick}
+                />
+                <div className={styles.orderNow}>Order Now</div>
               </button>
               <h1 className={styles.cappuccino}>Cappuccino</h1>
               <div className={styles.ourLatteIs2}>
