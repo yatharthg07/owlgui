@@ -1,8 +1,7 @@
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./Frame.module.css";
 import axios from "axios";
-
+import "./frameStyles.css"; // Import the renamed CSS file
 
 const Frame = () => {
   const navigate = useNavigate();
@@ -10,170 +9,90 @@ const Frame = () => {
   const onRectangleClick = useCallback(() => {
     // First, navigate to "/Preparing"
     navigate("/Preparing");
-  
+
     // Then, make a request to run the Python server
-    axios.get('http://localhost:8000/run-server') // Adjust URL as needed
-      .then(response => {
+    axios
+      .get("http://localhost:8000/run-server") // Adjust URL as needed
+      .then((response) => {
         console.log(response.data);
       })
-      .catch(error => {
-        console.error('Error running server:', error);
+      .catch((error) => {
+        console.error("Error running server:", error);
       });
   }, [navigate]);
-  
- 
+
   return (
-    <div className={styles.frameParent}>
-      <section className={styles.oDFWWrapper}>
-        <div className={styles.oDFW}>
+    <div>
+      <img className="backgroundImage" alt="" src="/backgroundImage_2.png" />
+      <div className="par">
+        <div className="logodiv">
           <img
-            className={styles.backgroundImage
-            }
-            alt=""
-            src="/backgroundImage_2.png"
-          />
-          <img
-            className={styles.orangewoodLogo}
+            className="orangewoodLogo"
             loading="lazy"
             alt=""
             src="/orangewoodLogo.png"
           />
-          <div className={styles.rectangleParent}>
-            <div className={styles.frameChild} />
-            <div className={styles.od4fw002Parent}>
-              <img
-                className={styles.od4fw002Icon}
-                alt=""
-                src="/backgroundImage_1.png"
-              />
-              <div className={styles.wrapperVector2}>
-                <img
-                  className={styles.wrapperVector2Child}
-                  loading="lazy"
-                  alt=""
-                  src="/vector-2.svg"
-                />
-              </div>
-              <img
-                className={styles.frameItem}
-                loading="lazy"
-                alt=""
-                src="/vector-3.svg"
-              />
-            </div>
-            <div className={styles.rectangleGroup}>
-              <div className={styles.frameInner} />
-              <button className={styles.rectangleContainer}>
-                <div
-                  className={styles.rectangleDiv}
-                  onClick={onRectangleClick}
-                />
-                <div className={styles.orderNow}>Order Now</div>
-              </button>
-              <h1 className={styles.latte}>{`Latte `}</h1>
-              <div className={styles.ourLatteIs}>
-                Our Latte is a classic coffee drink made with espresso and
-                steamed milk. It is best enjoyed with our almond biscotti.
-              </div>
-            </div>
-            <img
-              className={styles.whatIsALatte17083104771Icon}
-              loading="lazy"
-              alt=""
-              src="/whatisalatte1708310477-1@2x.png"
-            />
-          </div>
-          <div className={styles.frameDiv}>
-            <div className={styles.frameChild1} />
-            <div className={styles.od4fw005Parent}>
-              <img
-                className={styles.od4fw005Icon}
-                alt=""
-                src="/933587-od4fw00-2@2x.png"
-              />
-              <div className={styles.wrapperVector4}>
-                <img
-                  className={styles.wrapperVector4Child}
-                  loading="lazy"
-                  alt=""
-                  src="/vector-2.svg"
-                />
-              </div>
-              <img
-                className={styles.vectorIcon}
-                loading="lazy"
-                alt=""
-                src="/vector-5.svg"
-              />
-            </div>
-            <div className={styles.rectangleParent1}>
-              <div className={styles.frameChild2} />
-              <button className={styles.rectangleContainer}>
-                <div
-                  className={styles.rectangleDiv}
-                  onClick={onRectangleClick}
-                />
-                <div className={styles.orderNow}>Order Now</div>
-              </button>
-              <h1 className={styles.americano}>{`Americano `}</h1>
-              <div className={styles.ourLatteIs1}>
-                Our Latte is a classic coffee drink made with espresso and
-                steamed milk. It is best enjoyed with our almond biscotti.
-              </div>
-            </div>
-          </div>
-          <div className={styles.rectangleParent2}>
-            <div className={styles.frameChild4} />
-            <div className={styles.od4fw006Parent}>
-              <img
-                className={styles.od4fw006Icon}
-                alt=""
-                src="/933587-od4fw00-2@2x.png"
-              />
-              <div className={styles.wrapperVector6}>
-                <img
-                  className={styles.wrapperVector6Child}
-                  loading="lazy"
-                  alt=""
-                  src="/vector-2.svg"
-                />
-              </div>
-              <img
-                className={styles.frameChild5}
-                loading="lazy"
-                alt=""
-                src="/vector-3.svg"
-              />
-            </div>
-            <div className={styles.rectangleParent3}>
-              <div className={styles.frameChild6} />
-              <button className={styles.rectangleContainer}>
-                <div
-                  className={styles.rectangleDiv}
-                  onClick={onRectangleClick}
-                />
-                <div className={styles.orderNow}>Order Now</div>
-              </button>
-              <h1 className={styles.cappuccino}>Cappuccino</h1>
-              <div className={styles.ourLatteIs2}>
-                Our Latte is a classic coffee drink made with espresso and
-                steamed milk. It is best enjoyed with our almond biscotti.
-              </div>
-            </div>
-            <img
-              className={styles.unnamed11}
-              loading="lazy"
-              alt=""
-              src="/unnamed-1-1@2x.png"
-            />
-          </div>
-          <img
-            className={styles.howToDrinkCafeAmericano17Icon}
-            alt=""
-            src="/howtodrinkcafeamericano1705749373-1@2x.png"
-          />
         </div>
-      </section>
+
+        <div className="frameParent">
+          {/* Card 1 */}
+
+          <div className="frame">
+            <div className="rectangleParent">
+              <img
+                className="cardImage"
+                src={`${process.env.PUBLIC_URL}/whatisalatte1708310477-1@2x.png`}
+                alt="Cappuccino"
+              />
+              <h1 className="cardTitle">Latte</h1>
+              <p className="cardDescription">
+                Our Latte is a classic coffee drink made with espresso and
+                steamed milk. It is best enjoyed with our almond biscotti.
+              </p>
+            </div>
+            <button className="orderNowButton" onClick={onRectangleClick}>
+              Order Now
+            </button>
+          </div>
+          <div className="frame">
+            <div className="rectangleParent">
+              <img
+                className="cardImage"
+                src={`${process.env.PUBLIC_URL}/whatisalatte1708310477-1@2x.png`}
+                alt="Cappuccino"
+              />
+              <h1 className="cardTitle">Americano</h1>
+              <p className="cardDescription">
+                Our Americano is a classic coffee drink made with espresso and
+                hot water. It is perfect for those who enjoy a strong and bold
+                flavor.
+              </p>
+            </div>
+            <button className="orderNowButton" onClick={onRectangleClick}>
+              Order Now
+            </button>
+          </div>
+          {/* aCard 3 */}
+          <div className="frame">
+            <div className="rectangleParent">
+              <img
+                className="cardImage"
+                src={`${process.env.PUBLIC_URL}/whatisalatte1708310477-1@2x.png`}
+                alt="Cappuccino"
+              />
+              <h1 className="cardTitle">Cappuccino</h1>
+              <p className="cardDescription">
+                Our Cappuccino is a classic coffee drink made with equal parts
+                espresso, steamed milk, and milk foam. It is perfect for those
+                who enjoy a creamy and frothy texture.
+              </p>
+            </div>
+            <button className="orderNowButton" onClick={onRectangleClick}>
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
