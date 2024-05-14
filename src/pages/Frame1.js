@@ -1,33 +1,35 @@
 import { useCallback } from "react";
-import styles from "./Frame1.module.css";
+import "./Frame1.css";
 
 const Frame1 = () => {
-  const onOD4FW004ImageClick = useCallback(() => {
-    // Please sync "landing page" to the project
+  const onImageClick = useCallback(() => {
+    // Handle image click event
   }, []);
 
   return (
-    <div className={styles.frameParent}>
-      <section className={styles.od4fw004Parent}>
+    <div className="frameParent1" >
+      <section className="backgroundSection1">
         <img
-          className={styles.backgroundImage}
+          className="backgroundImage1"
+          loading="lazy"
           alt=""
-          src="/backgrounImage_2.png"
-          onClick={onOD4FW004ImageClick}
+          src="/backgroundImage_2.png"
+          onClick={onImageClick}
         />
+      </section>
+      <section className="logoSection1">
         <img
-          className={styles.orangewoodLogo}
+          className="logoImage1"
           loading="lazy"
           alt=""
           src="/orangewoodLogo.png"
         />
       </section>
-      <section className={styles.rectangleParent}>
-        <div className={styles.frameChild} />
-        <b className={styles.weArePreparing}>we are preparing your order</b>
-        <div className={styles.geniusGifClock}>
+      <section className="contentSection1">
+        <b className="contentText1">We are preparing your order</b>
+        <div className="gifContainer1">
           <img
-            className={styles.geniusGifCoffeeOclock1}
+            className="gifImage1"
             loading="lazy"
             alt=""
             src="/genius-gif--coffee-oclock-1@2x.gif"
