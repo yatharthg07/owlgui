@@ -22,8 +22,7 @@ const Frame = () => {
   }, [navigate]);
 
   return (
-    <div>
-      <img className="backgroundImage" alt="" src="/backgroundImage_2.png" />
+    <div className="pageContainer">
       <div className="par">
         <div className="logodiv">
           <img
@@ -36,7 +35,6 @@ const Frame = () => {
 
         <div className="frameParent">
           {/* Card 1 */}
-
           <div className="frame">
             <div className="rectangleParent">
               <img
@@ -72,7 +70,7 @@ const Frame = () => {
               Order Now
             </button>
           </div>
-          {/* aCard 3 */}
+          {/* Card 3 */}
           <div className="frame">
             <div className="rectangleParent">
               <img

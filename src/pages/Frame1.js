@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import "./Frame1.css";
+import styles from "./Frame1.module.css";
 
 const Frame1 = () => {
   const onImageClick = useCallback(() => {
@@ -7,29 +7,29 @@ const Frame1 = () => {
   }, []);
 
   return (
-    <div className="frameParent1" >
-      <section className="backgroundSection1">
+    <div className={styles.frameParent1}>
+      <section className={styles.backgroundSection1}>
         <img
-          className="backgroundImage1"
+          className={styles.backgroundImage1}
           loading="lazy"
           alt=""
           src="/backgroundImage_2.png"
           onClick={onImageClick}
         />
       </section>
-      <section className="logoSection1">
+      <section className={styles.logoSection1}>
         <img
-          className="logoImage1"
+          className={styles.logoImage1}
           loading="lazy"
           alt=""
           src="/orangewoodLogo.png"
         />
       </section>
-      <section className="contentSection1">
-        <b className="contentText1">We are preparing your order</b>
-        <div className="gifContainer1">
+      <section className={styles.contentSection1}>
+        <b className={styles.contentText1}>We are preparing your order</b>
+        <div className={styles.gifContainer1}>
           <img
-            className="gifImage1"
+            className={styles.gifImage1}
             loading="lazy"
             alt=""
             src="/genius-gif--coffee-oclock-1@2x.gif"
