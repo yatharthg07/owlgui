@@ -71,6 +71,43 @@
 }
 
 
+/* .thankYouPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  
+}
+
+.thankYouMessage {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+}
+
+.closeButton {
+  position: absolute;
+  top:0px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 20;
+} */
+
 .thankYouPopup {
   position: fixed;
   top: 0;
@@ -82,6 +119,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  backdrop-filter: blur(5px); /* Blur background */
 }
 
 .thankYouMessage {
@@ -91,4 +129,35 @@
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  animation: popupAnimation 0.5s ease; /* Popup animation */
+}
+
+.closeButton {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888; /* Close button color */
+}
+
+.blurBackground {
+  filter: blur(5px); /* Apply blur to the background */
+}
+
+@keyframes popupAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

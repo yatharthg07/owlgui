@@ -4,24 +4,43 @@ import Progressbar from "../components/Progressbar";
 import { useNavigate } from "react-router-dom";
 
 const Frame1 = () => {
+  const navigate = useNavigate();
   const onImageClick = useCallback(() => {
     // Handle image click event
   }, []);
-
+  const [showThankYou, setShowThankYou] = useState(false);
   const[progress,setProgress]= useState(0);
 
   useEffect(() => {
-    const time = setInterval(() => {
-      if (progress < 100) {
-        setProgress((p) => p + 1);
-      }
-    }, 200);
+    const timer = setInterval(() => {
+      setProgress((p) => {
+        if (p < 100) {
+          return p + 1;
+        } else {
+          clearInterval(timer);
+          return p;
+        }
+      });
+    }, 100);
 
-    return () => {
-      clearInterval(time);
+    return () => clearInterval(timer);
+  }, [progress]);
+
+  useEffect(() => {
+    if (progress === 100) {
+      setShowThankYou(true);
+      setTimeout(() => {
+        setShowThankYou(false);
+        navigate("/");
+        
+      }, 300000); // Redirect to main frame page after 3 seconds
     }
-  }, [progress])
+  }, [progress, navigate]);
 
+  const closePopup = () => {
+    setShowThankYou(false);
+    navigate("/");
+  };
   return (
     <div className={styles.frameParent1}>
       <section className={styles.backgroundSection1}>
@@ -60,6 +79,16 @@ const Frame1 = () => {
       </div>
       </div>  
       </section>
+      {showThankYou && (
+        <div className={styles.thankYouPopup}>
+          <div className={styles.thankYouMessage}>
+            <button className={styles.closeButton} onClick={closePopup}>
+              &times;
+            </button>
+            <p>Thank you! Your order is ready.</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
